@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City of Lights</title>
+    <link rel="stylesheet" href="./style.css"></link>
+  </head>
+
+  <body>
+    <nav class="navbar">
+    <h1 class="logo">LIGHTS</h1>
+    <ul class="nav-links">
+      <li class="active"><a href="#">
+      </a>Home</li>
+      <li><a href="#">
+      </a>Tours</li>
+      <li><a href="#">
+      </a>Explore</li>
+      <li><a href="#">
+      </a>About</li>
+      <li class="ctn" ><a href="#">
+      </a>Contact</li>
+    </ul>
+    <img src="./icons8-menu-96.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+      <div class="header-content">
+        <h1>Welcome to my world!</h1>
+        <div class="line"></div>
+        <h2>A Magical journey</h2>
+        <a href="#" class="ctn"> Learn More</a>
+      </div>
+    </header>
+    <!-- events -->
+    <section class="event">
+      <div class="title">
+        <h1>Upcomming Events</h1>
+        <div class="line"></div>
+        <div class="row">
+          <div class="col">
+            <img src="./img1.jpeg" alt="">
+            <h4>City Of Lights</h4>
+           <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ratione tempore 
+           </p>
+            <a href="#" class="ctn">Learn More</a>
+          </div>
+          <div class="col">
+            <img src="./img2.jpeg" alt="">
+            <h4>Flying Baloon</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ratione tempore </p>
+            <a href="#" class="ctn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="explore">
+      <div class="explore-content">
+      <h1>Where Your heart Lies</h1>
+      <div class="line"></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laborum voluptate, magnam omnis consectetur aspernatur. Nostrum consequuntur delectus tempora? Quod culpa soluta eius ipsam tempora!
+      </p>
+      <a href="#" class="ctn">Learn More </a>
+    </div>
+    </section>
+    <section class="tours">
+      <div class="row">
+        <div class="col content-col">
+        <h1>Upcomming Saga's</h1>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, perferendis dolorem eius voluptas ducimus iure.</p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+<div class="col image-col">
+  <div class="image-gallery">
+    <img src="./img5.jpeg" alt="">
+    <img src="./img6.jpeg" alt="">
+    <img src="./img7.jpeg" alt="">
+    <img src="./img8.jpeg" alt="">
+  </div>
+</div>
+  
+      </div>
+    </section>
+  <section class="footer">
+    <p>
+    169/15B , Old Civil line,   Pakistan |phone:123-44-33|  Email:samanzohravic@gmail.com
+    </p>
+    <p>Copyright © 2022 Saman Zohra</p>
+  </section>
+
+    <script>
+      const menuBtn=document.querySelector('.menu-btn')
+      const navlinks=document.querySelector('.nav-links')
+      menuBtn.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+      })
+  </script>
+  </body>
+</html>

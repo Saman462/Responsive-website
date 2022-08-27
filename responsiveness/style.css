@@ -1,0 +1,272 @@
+@import url("https://fonts.google.com/specimen/Dancing+Script");
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.active {
+  color: #e24c00;
+  text-decoration: underline;
+  font-weight: bold;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+/* Navbar */
+.navbar {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-links li {
+  margin: 0 30px;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./lights.jpg");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.header-content {
+  margin-bottom: 15px;
+  color: whitesmoke;
+  text-align: center;
+}
+.header-content h2 {
+  font-size: 4vmin;
+}
+.line {
+  width: 150px;
+  height: 4px;
+  background: #e24c00;
+  margin: 10px auto;
+  border: 5px;
+}
+.header-content h2 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.ctn {
+  padding: 8px 15px;
+  background: #e24c00;
+  border-radius: 30px;
+  color: whitesmoke;
+}
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+/* Events */
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #ee9818;
+}
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.events .row {
+  margin-top: 50px;
+}
+h4 {
+  font-size: 4vmin;
+  color: #e89923;
+  margin: 20px auto;
+}
+p {
+  color: #eaa032;
+  padding: 0px 40px;
+}
+.events .ctn {
+  margin-top: 30px;
+}
+
+.explore {
+  width: 100%;
+  height: 80vh;
+  background-image: url(./img4.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.explore-content .line {
+  margin-bottom: 50px;
+}
+.explore-content {
+  width: 50%;
+  padding: 50px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.explore-content h1 {
+  font-size: 7vmin;
+  margin: 50px;
+}
+.explore-content p {
+  color: rgb(231, 231, 231);
+}
+.explore-content .ctn {
+  margin-top: 40px;
+}
+.tours .row .col {
+  width: 50%;
+}
+.content-col {
+  width: 40%;
+}
+.image-col {
+  width: 60%;
+}
+.tours .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.image-gallery img {
+  width: 250px;
+  max-width: 300px;
+  height: 250px;
+  margin: 10px;
+}
+.content-col h1 {
+  font-size: 7vmin;
+  color: rgb(181, 65, 23);
+}
+
+.content-col .line {
+  margin-left: -1px;
+}
+.content-col p {
+  padding: 0;
+  margin: 30px auto;
+}
+.content-col .ctn {
+  margin-left: 100px;
+}
+.footer {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background: rgb(238, 110, 6);
+  text-align: center;
+}
+.footer p {
+  color: whitesmoke;
+  margin: 20px auto;
+}
+/* Mobile device */
+@media screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: rgb(197, 100, 64);
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+  }
+  .nav-links li {
+    margin: 30px auto;
+  }
+  /* Events */
+  .row {
+    flex-direction: column;
+  }
+  .row .col {
+    margin: 20px auto;
+  }
+  .col img {
+    max-width: 90%;
+  }
+  /* explore */
+  .explore-content {
+    width: 100%;
+  }
+  .tours .col {
+    width: 100%;
+  }
+  .image-gallery {
+    justify-content: center;
+    align-items: center;
+  }
+  .image-gallery img {
+    width: 90%;
+  }
+  .footer {
+    padding: 10px;
+  }
+}
+/* Animations */
+img {
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.ctn:hover {
+  background: whitesmoke;
+  color: #e24c00;
+  box-shadow: 2px 2px 5px #00000056;
+}
+li:hover {
+  color: #e24c00;
+  cursor: zoom-out;
+}
